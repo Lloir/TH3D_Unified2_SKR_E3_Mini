@@ -21,7 +21,7 @@
 // *************   CREALITY PRINTERS W/SKR E3 MINI BOARD    *****************
 //===========================================================================
 
-//#define ENDER3
+#define ENDER3
 //#define ENDER3_MAX
 //#define ENDER5
 //#define ENDER5_PLUS
@@ -37,7 +37,7 @@
 // Uncomment what SKR E3 Mini Board Version you are using
 //#define SKR_E3_MINI_V1
 //#define SKR_E3_MINI_V1_2
-//#define SKR_E3_MINI_V2_0
+#define SKR_E3_MINI_V2_0
 
 // EZOut Filament Sensor
 // This board only works with this version of our sensor kit: https://www.th3dstudio.com/product/ezout-filament-sensor-kit-standard/
@@ -59,7 +59,7 @@
 //#define ENDER5_OEM
 //#define ENDER5_PLUS_OEM
 //#define SPRITE_EXTRUDER_18MM_MOUNT // Mounts to the stock CRTouch bracket
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // EZABL on Z-Probe Port Wiring Option
 // If your BTT board is making the EZABL work unreliably then connect to the Z-Probe port on pins GND and PC14.
@@ -153,7 +153,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -44, -42, 0 }
 #endif
 
 
@@ -314,12 +314,12 @@
 // If you want to use the BL-Touch uncomment the 2 lines below. Refer to BTT documentation for connecting the BL Touch.
 // Use the Z endstop port for the black/white wires from the BL Touch.
 // You also need to uncomment #define CUSTOM_PROBE above and then enter in your offsets above in the CUSTOM PROBE section.
-//#define BLTOUCH
+#define BLTOUCH
 // Here is where you set your servo pin. For SKR E3 Mini use PA1
-//#define SERVO0_PIN PA1
+#define SERVO0_PIN PA1
 // If you are using the 5 pin header for all the BL Touch connections, uncomment the below line
 // On the V1.0 and V1.2 boards this would be the 3 pin SERVO header and the 2 pin PROBE header.
-//#define BLTOUCH_ON_5PIN
+#define BLTOUCH_ON_5PIN
 
 // MANUAL MESH LEVELING ----------------------------
 // If you want to use manual mesh leveling you can enable the below option. This is for generating a MANUAL mesh WITHOUT a probe. To change the mesh inset value change the EZABL_PROBE_EDGE setting above.
@@ -332,7 +332,7 @@
 // during SD printing. If this is found at bootup it will ask you if you want to resume the print.
 //
 // NOTE: This feature causes excessive wear on your SD card.
-//#define POWER_LOSS_RECOVERY
+#define POWER_LOSS_RECOVERY
 
 // ARC Support Override ----------------------------
 // Arc support is enabled by default on all builds but this takes up extra space. If you get compile errors due to the size being too large when enabling other options, then disable ARC_SUPPORT
