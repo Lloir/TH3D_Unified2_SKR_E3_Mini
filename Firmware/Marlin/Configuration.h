@@ -195,8 +195,8 @@
 
 // If you have a hotend and thermistor capable of over 290C you can set the max temp value below.
 // Setting this higher than 290C on a stock or traditional thermistor will damage it. Refer to your thermistor documentation to see what max temp is.
-//#define HIGH_TEMP_THERMISTOR
-#define HIGH_TEMP_THERMISTOR_TEMP 350
+#define HIGH_TEMP_THERMISTOR
+#define HIGH_TEMP_THERMISTOR_TEMP 300 // Sprite Pro
 
 // BED THERMISTOR SETTINGS -------------------------
 
@@ -544,6 +544,7 @@
     #define USE_XMIN_PLUG
     #define USE_YMIN_PLUG
     #define USE_ZMIN_PLUG
+    #define DUAL_Z_MOTORS //Using Both Z's on E3P
   #endif
 
   #if ENABLED(ENDER5) || ENABLED(ENDER5_PLUS)
